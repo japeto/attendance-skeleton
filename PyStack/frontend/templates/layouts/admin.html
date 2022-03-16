@@ -1,0 +1,65 @@
+<!-- -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="/static/images/favicon.ico">
+    <link rel="icon" type="image/png" href="/static/images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/static/images/favicon-16x16.png" sizes="16x16" />
+
+    <title>
+    ClassGrade | {% block title %}{% endblock %} 
+    </title>
+    
+    <link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="/static/styles/fontawesome.min.css"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="/static/styles/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/static/styles/sb-admin-2.css"  />
+
+    <link rel="stylesheet" href="/static/styles/viniste.css" >
+    <!-- CSS dynamically added using 'config.options.theme' defined in config file -->
+
+    <!-- Specific CSS goes HERE -->
+    {% block stylesheets %}{% endblock stylesheets %}
+  </head>
+  <body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+        {% include "includes/sidebar.html" %}
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column" style="padding-top: 6em;">
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                {% include "includes/navigation.html" %}
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    {% block content %}{% endblock content %}
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            {% include "includes/scripts.html" %}
+            <!-- Specific JS goes HERE -->
+            {% block javascripts %}{% endblock javascripts %}
+            <!-- FOOTER HERE -->
+            {% include "includes/footer.html" %}
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+  </body>
+
+</html>

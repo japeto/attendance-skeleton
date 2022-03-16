@@ -1,0 +1,49 @@
+.Notice {
+  padding: 10px 45px;
+  background-color: #e0e0e0;
+  border-left: 9px solid #7f7f84;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+     -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+          box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+}
+
+.Notice:hover {
+  padding: 10px 45px;
+  background-color: #ffffff;
+  border-left: 9px solid #7f7f84;
+  cursor: pointer;
+}
+
+.Notice-sm {
+  padding: 10px;
+  font-size: 80%;
+}
+.Notice-lg {
+  padding: 35px;
+  font-size: large;
+}
+.Notice-success {
+  border-color: #80D651;
+}
+.Notice-success>strong {
+  color: #80D651;
+}
+.Notice-info {
+  border-color: #45ABCD;
+}
+.Notice-info>strong {
+  color: #45ABCD;
+}
+.Notice-warning {
+  border-color: #FEAF20;
+}
+.Notice-warning>strong {
+  color: #FEAF20;
+}
+.Notice-danger {
+  border-color: #d73814;
+}
+.Notice-danger>strong {
+  color: #d73814;
+}

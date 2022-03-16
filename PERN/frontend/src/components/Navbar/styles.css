@@ -1,0 +1,66 @@
+header {
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(203, 206, 212);
+}
+
+.logo {
+	
+	display: inline-block;
+	width: calc(100% - 90%);
+	font-size: 18px;
+	padding: 18px 17px;
+	color: #fff;
+}
+.logo a{
+	text-decoration:none;
+	color: #fff;
+}
+.logo:hover{
+	font-size: 18px;
+	color: rgb(104, 14, 14);
+}
+
+.navbar {
+	display:inline-block;
+	width: calc(100% - 30%);
+	margin: auto;
+	/* border: red 2px solid; */
+	
+}
+
+.navbar li{
+	list-style: none;
+	display:inline-block;
+	margin:auto;
+}
+
+.navbar li a{
+	text-decoration: none;
+	font-size: 18px;
+	padding:2px 10px;
+	color: black;
+}
+
+.navbar li a:hover{
+	border-radius: 2px;
+	color: black;
+}
+
+.navbar li a:active{
+	color: black;
+}
+.account {
+	display: inline-block;
+	width: calc(100% - 90%);
+	font-size: 18px;
+	padding: 18px 26px;
+}
+
+.account a{
+	text-decoration:none;
+	color: white;
+}
+.account:hover{
+	color: white;
+}

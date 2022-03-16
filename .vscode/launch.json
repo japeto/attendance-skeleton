@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: attendance",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/app.py",
+            "console": "integratedTerminal",
+            "env": {
+                "FLASK_ENV": "development",
+                "FLASK_DEBUG": "1",
+                "SECRET_KEY": "_5#y2LF4Qnec]/g4mmz!",
+                "TZ": "America/Bogota",
+                "DB_ENGINE":"postgresql",
+                "DB_USERNAME":"postgresql",
+                "DB_PASSWORD":"postgresql",
+                "DB_HOST":"0.0.0.0",
+                "DB_PORT":"5432",
+            },
+            "cwd": "${workspaceFolder}",
+            "args": [],
+            "jinja": true
+        }
+    ]
+}

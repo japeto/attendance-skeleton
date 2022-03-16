@@ -1,0 +1,36 @@
+{% extends 'layouts/base.html' %}
+{% block title %} Attendance {% endblock title %}
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="d-flex justify-content-center row">
+
+        <div class="card" style="width:400px">
+        <div class="card-body">
+            <form action="/access" method="POST">
+                <div class="form-group row">
+                    <label for="lbl" class="col-sm-4 col-form-label col-form-label-sm">Estudiante</label>
+                    <div class="col-sm-8">
+                        <input type="number" class="form-control form-control-sm" maxlength="12" id="code">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="lblmail" class="col-sm-4 col-form-label col-form-label-sm">Correo</label>
+                    <div class="col-sm-8">
+                        <input type="email" class="form-control form-control-sm" id="lblmail">
+                    </div>
+                </div>
+                <button class="btn btn-sm btn-danger btn-block">Acceder</button>
+
+              </form>
+        </div>
+        </div>
+        
+    </div>
+</div>
+{% endblock content %}
+<!-- Specific JS goes HERE --> 
+{% block javascripts %}
+{% endblock javascripts %}

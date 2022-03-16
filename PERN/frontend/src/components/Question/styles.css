@@ -1,0 +1,25 @@
+.Login{
+  text-align: center;
+}
+
+.UL-Vertical {
+  list-style: none;
+  margin: 0;
+  padding: 0px 8px;
+  display: inline-block;
+}
+.UL-Vertical li {
+  background-color: #777;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #666;
+}
+
+.UL-Vertical li+li {
+  margin-top: 8px;
+}
+
+.Center{
+  margin: auto;
+  width: 50%;
+}

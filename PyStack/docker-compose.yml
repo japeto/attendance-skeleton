@@ -1,0 +1,25 @@
+# docke-compose.yml
+version: "3"
+services:
+  backend:
+    container_name: django_backend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    env_file: backend/.env
+  frontend:
+    container_name: flask_front
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    env_file: frontend/.env
+    expose:
+      - "6000"
+    ports:
+      - "6000:6000"
+    environment:
+      FLASK_ENV: production
+  
+

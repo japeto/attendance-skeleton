@@ -1,0 +1,29 @@
+{% extends 'layouts/base.html' %}
+{% block title %} Attendance {% endblock title %}
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="d-flex justify-content-center row">
+
+        <div class="card" style="width:400px">
+        <div class="card-body">
+            <form action="/access" method="POST">
+                <p>
+                    <b class="col-sm-12"></b>
+                </p>
+                <div class="col-md-12 text-center">
+                    <a href="#" class="btn btn-sm btn-secondary">NO</a>
+                    <a href="/question/{{qid}}" class="btn btn-sm btn-danger">SI</a>
+                </div>
+              </form>
+        </div>
+        </div>
+        
+    </div>
+</div>
+{% endblock content %}
+<!-- Specific JS goes HERE --> 
+{% block javascripts %}
+{% endblock javascripts %}
